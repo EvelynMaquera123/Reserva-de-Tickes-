@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">NE-SubGrupo14-Proyecto-Final</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_app_id">183251787312994</string>
+    <string name="fb_login_protocol_scheme">fb183251787312994</string>
+    <string name="facebook_application_id">183251787312994</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_titulo">Titulo:</string>
+    <string name="hint_fecha">Fecha:</string>
+    <string name="hint_descripcion">Descripcion:</string>
+    <string name="hint_img">Imagen:</string>
+    <string name="hint_latitud">Latitud:</string>
+    <string name="hint_longitud">Longitud:</string>
+
+    <string-array name="destinos">
+        <item>Lima</item>
+        <item>Cusco</item>
+        <item>Pisco</item>
+        <item>Chiclayo</item>
+        <item>Tacna</item>
+        <item>Tumbes</item>
+    </string-array>
+
+    <string-array name="vuelos">
+        <item>LUNES 7:00 AM</item>
+        <item>LUNES 9:00 PM</item>
+        <item>MARTES 5:00 AM</item>
+        <item>MARTES 6:00 PM</item>
+        <item>JUEVES 10:00 AM</item>
+        <item>SABADO 5:00 AM</item>
+    </string-array>
+
+    <string-array name="asientos">
+        <item>AL-1</item>
+        <item>AL-2</item>
+        <item>AL-15</item>
+        <item>AB-1</item>
+        <item>AB-7</item>
+        <item>AB-16</item>
+    </string-array>
+
+
+</resources>

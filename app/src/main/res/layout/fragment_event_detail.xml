@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.events.EventDetailFragment">
+
+    <ImageView
+        android:id="@+id/event_cover_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toTopOf="@id/event_detail_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/event_detail_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/event_cover_image">
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Fiesta de las guaguas y mazapanes por el Día de los Santos"
+            android:textAppearance="?textAppearanceHeadline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/calendar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_calendar_icon"
+            app:layout_constraintStart_toStartOf="@id/event_title"
+            app:layout_constraintTop_toBottomOf="@id/event_title" />
+
+        <TextView
+            android:id="@+id/event_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 y 2 de noviembre"
+            app:layout_constraintBottom_toBottomOf="@id/calendar_icon"
+            app:layout_constraintStart_toEndOf="@id/calendar_icon"
+            app:layout_constraintTop_toTopOf="@id/calendar_icon" />
+
+        <TextView
+            android:id="@+id/event_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="El Día de los Difuntos, también llamado el Dia de los Finados, coincide con la celebración católica de Todos los Santos – al igual que otras festividades parece que esta celebración es el resultado de combinar una antigua tradición o rito indígena con una fiesta católica. Las celebraciones del Día de los Difuntos consisten de vigilias y visitas a los cementerios donde se llevan ofrendas de flores y comida tradicional a los difuntos. "
+            app:layout_constraintEnd_toEndOf="@id/event_title"
+            app:layout_constraintStart_toStartOf="@id/event_title"
+            app:layout_constraintTop_toBottomOf="@id/calendar_icon" />
+
+        <TextView
+            android:id="@+id/gallery_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ubicación"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintStart_toStartOf="@id/event_title"
+            app:layout_constraintTop_toBottomOf="@id/event_description" />
+
+        <TextView
+            android:id="@+id/localization_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ubicación"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintStart_toStartOf="@id/event_title"
+            app:layout_constraintTop_toBottomOf="@id/gallery_title" />
+
+        <TextView
+            android:id="@+id/tour_services_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Servicios de Tour"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintStart_toStartOf="@id/event_title"
+            app:layout_constraintTop_toBottomOf="@id/localization_title" />
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Estadísticas"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintStart_toStartOf="@id/event_title"
+            app:layout_constraintTop_toBottomOf="@id/tour_services_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

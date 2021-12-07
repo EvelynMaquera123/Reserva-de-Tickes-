@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerFragment">
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="ne.subgrupo_catorce.proyecto_final.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_eventsDBFragment"
+            app:destination="@id/eventsDBFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_eventsListFragment"
+            app:destination="@id/eventsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsListFragment"
+        android:name="ne.subgrupo_catorce.proyecto_final.ui.events.EventsListFragment"
+        android:label="fragment_events_list"
+        tools:layout="@layout/fragment_events_list" >
+        <action
+            android:id="@+id/action_eventsListFragment_to_eventOverview"
+            app:destination="@id/eventOverview" />
+        <action
+            android:id="@+id/action_eventsListFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventOverview"
+        android:name="ne.subgrupo_catorce.proyecto_final.ui.events.EventOverviewFragment"
+        android:label="fragment_event_overview"
+        tools:layout="@layout/fragment_event_overview" >
+        <action
+            android:id="@+id/action_eventOverview_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+        <action
+            android:id="@+id/action_eventOverview_to_registerFragment2"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_eventOverview_to_eventsListFragment"
+            app:destination="@id/eventsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="ne.subgrupo_catorce.proyecto_final.ui.events.EventDetailFragment"
+        android:label="fragment_event_detail"
+        tools:layout="@layout/fragment_event_detail" >
+        <action
+            android:id="@+id/action_eventDetailFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/registerFragment" />
+        <action
+            android:id="@+id/action_eventDetailFragment_to_eventOverview"
+            app:destination="@id/eventOverview" />
+    </fragment>
+    <fragment
+        android:id="@+id/newEventFragment"
+        android:name="ne.subgrupo_catorce.proyecto_final.ui.dashboard.NewEventFragment"
+        android:label="fragment_new_event"
+        tools:layout="@layout/fragment_new_event" />
+    <fragment
+        android:id="@+id/eventsDBFragment"
+        android:name="ne.subgrupo_catorce.proyecto_final.ui.dashboard.EventsDBFragment"
+        android:label="fragment_events_d_b"
+        tools:layout="@layout/fragment_events_d_b" >
+        <action
+            android:id="@+id/action_eventsDBFragment_to_newEventFragment"
+            app:destination="@id/newEventFragment" />
+        <action
+            android:id="@+id/action_eventsDBFragment_to_editEventFragment"
+            app:destination="@id/editEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editEventFragment"
+        android:name="ne.subgrupo_catorce.proyecto_final.ui.dashboard.EditEventFragment"
+        android:label="fragment_edit_event"
+        tools:layout="@layout/fragment_edit_event" >
+        <action
+            android:id="@+id/action_editEventFragment_to_eventsDBFragment"
+            app:destination="@id/eventsDBFragment" />
+    </fragment>
+</navigation>
